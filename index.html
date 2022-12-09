@@ -3,96 +3,7 @@
 <title>WisataPemalangA11.2022.14639</title>
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<style>
-* {
-  box-sizing: border-box;
-}
-
-.menu {
-  text-decoration: none;
-  float: left;
-  width: 20%;
-  text-align: center;
-}
-
-.menu a {
-  text-decoration: none;
-  background-color: #2337eb;
-  padding: 8px;
-  margin-top: 7px;
-  display: block;
-  width: 100%;
-  color: white;
-}
-
-.main {
-  text-decoration: none;
-  float: left;
-  width: 60%;
-  padding: 0 20px;
-  color : black;
-}
-
-.right {
-  text-decoration: none;
-  background-color: #2337eb;
-  float: right;
-  width: 20%;
-  padding: 15px;
-  margin-top: 7px;
-  text-align: center;
-  }
-  
-  .left {
-  text-decoration: none;
-  background-color: #2337eb;
-  float: left;
-  width: 20%;
-  padding: 15px;
-  margin-top: 7px;
-  text-align: center;
-  color: #c5c9d1;
-  }
-
-ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-  background-color: #333;
-}
-
-li {
-  float: left;
-  border-right:1px solid #bbb;
-}
-
-li:last-child {
-  border-right: none;
-}
-
-li a {
-  display: block;
-  color: white;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-}
-
-li a:hover:not(.active) {
-  background-color: #111;
-}
-
-.active {
-  background-color: #0c00b3;
-}
-@media only screen and (max-width: 620px) {
-  /* For mobile phones: */
-  .menu, .main, .right {
-    width: 100%;
-  }
-}
-</style>
+<link rel="stylesheet" href="style.css">
 <link rel="icon" type="image/x-icon" href="nur.png">
 </head>
 <body style="background-color: #e5e5e5;font-family:Verdana;color:#ffffff;">
@@ -101,12 +12,65 @@ li a:hover:not(.active) {
 	<img src = "prof.png" width="13%" style="float:left;">
 	<img src = "pemalang.png" width="13%" style="float:right;">
 	<h2 style="text-align: center; 300px;">KABUPATEN PEMALANG KAYA AKAN WISATA ALAM</h2>
+	
+	<div id="clock"></div>
+			<script type="text/javascript">
+			<!--
+			function showTime() {
+				var a_p = "";
+				var today = new Date();
+				var curr_hour = today.getHours();
+				var curr_minute = today.getMinutes();
+				var curr_second = today.getSeconds();
+				if (curr_hour < 12) {
+					a_p = "AM";
+				} else {
+					a_p = "PM";
+				}
+				if (curr_hour == 0) {
+					curr_hour = 12;
+				}
+				if (curr_hour > 12) {
+					curr_hour = curr_hour - 12;
+				}
+				curr_hour = checkTime(curr_hour);
+				curr_minute = checkTime(curr_minute);
+				curr_second = checkTime(curr_second);
+			 document.getElementById('clock').innerHTML=curr_hour + ":" + curr_minute + ":" + curr_second + " " + a_p;
+				}
+
+			function checkTime(i) {
+				if (i < 10) {
+					i = "0" + i;
+				}
+				return i;
+			}
+			setInterval(showTime, 500);
+			//-->
+			</script>
+
+			<!-- Menampilkan Hari, Bulan dan Tahun -->
+			<br>
+			<script type='text/javascript'>
+				<!--
+				var months = ['Januari', 'Februari', 'Maret', 'April', 'Mei', 'Juni', 'Juli', 'Agustus', 'September', 'Oktober', 'November', 'Desember'];
+				var myDays = ['Minggu', 'Senin', 'Selasa', 'Rabu', 'Kamis', 'Jum&#39;at', 'Sabtu'];
+				var date = new Date();
+				var day = date.getDate();
+				var month = date.getMonth();
+				var thisDay = date.getDay(),
+					thisDay = myDays[thisDay];
+				var yy = date.getYear();
+				var year = (yy < 1000) ? yy + 1900 : yy;
+				document.write(thisDay + ', ' + day + ' ' + months[month] + ' ' + year);
+				//-->
+			</script>
 		
 </div>
 <body>
 
 <ul>
-  <li><a class="active" href="index.html">Home</a></li>
+  <li><a class="active" href="daskom1.html">Home</a></li>
   <li><a href="source.html">Source</a></li>
   <li><a href="contact.html">Contact</a></li>
   <li style="float:right"><a href="#about">About</a></li>
@@ -126,15 +90,79 @@ li a:hover:not(.active) {
 
   <div class="main"><br>
   <h2>Melihat Potensi Wisata Alam di Kabupaten Pemalang</h2>
-		<img src = "mendelem.jpg" width="100%" style="float:left;padding-left: 5px;">
-		<p>
-			<i>
-				<small>
-					image source :
-						<a href="https://awal.id/2022/06/menguji-andrenalin-di-tebing-vertikal-taman-rancah-bukit-mendelem-pemalang/">https://awal.id/2022/06/menguji-andrenalin-di-tebing-vertikal-taman-rancah-bukit-mendelem-pemalang/</a>
-				</small>
-			</i>
-		</p>
+		<div class="slideshow-container">
+
+		<div class="mySlides fade">
+		  <div class="numbertext">1 / 4</div>
+		  <img src="mdl.jpg" style="width:100%">
+		  <div class="text">Bukit Mendelem</div>
+		</div>
+
+		<div class="mySlides fade">
+		  <div class="numbertext">2 / 4</div>
+		  <img src="wdr.jpg" style="width:100%">
+		  <div class="text">Pantai Widuri</div>
+		</div>
+
+		<div class="mySlides fade">
+		  <div class="numbertext">3 / 4</div>
+		  <img src="rft.jpg" style="width:100%">
+		  <div class="text">Rainbow Rafting</div>
+		</div>
+		
+		<div class="mySlides fade">
+		  <div class="numbertext">4 / 4</div>
+		  <img src="tkb.jpg" style="width:100%">
+		  <div class="text">Bukit Tangkeban</div>
+		</div>
+		
+		<div class="mySlides fade">
+		  <div class="numbertext">4 / 4</div>
+		  <img src="gbg.jpg" style="width:100%">
+		  <div class="text">Bukit Gambangan</div>
+		</div>
+		
+		<div class="mySlides fade">
+		  <div class="numbertext">4 / 4</div>
+		  <img src="sci.jpg" style="width:100%">
+		  <div class="text">Kali Suci</div>
+		</div>
+
+		</div>
+		<br>
+
+		<div style="text-align:center">
+		  <span class="dot"></span> 
+		  <span class="dot"></span> 
+		  <span class="dot"></span>
+		  <span class="dot"></span>
+		  <span class="dot"></span>
+		  <span class="dot"></span>
+		</div>
+
+		<script>
+		let slideIndex = 0;
+		showSlides();
+
+		function showSlides() {
+		  let i;
+		  let slides = document.getElementsByClassName("mySlides");
+		  let dots = document.getElementsByClassName("dot");
+		  for (i = 0; i < slides.length; i++) {
+			slides[i].style.display = "none";  
+		  }
+		  slideIndex++;
+		  if (slideIndex > slides.length) {slideIndex = 1}    
+		  for (i = 0; i < dots.length; i++) {
+			dots[i].className = dots[i].className.replace(" active", "");
+		  }
+		  slides[slideIndex-1].style.display = "block";  
+		  dots[slideIndex-1].className += " active";
+		  setTimeout(showSlides, 2000); // Change image every 2 seconds
+		}
+		</script>
+
+
 	<p style="text-align: justify; text-indent: 0.5in;">Selain terkenal dengan Nanas Madu dan olahan Nasi Grombyang serta Lontong Dekemnya, Pemalang juga memiliki segudang anugrah dari Allah Swt. Berupa alam yang indah
 	   Mulai dari pantai hingga dataran tinggi yang mempesona yang kali ini akan kita bahas sebagai berikut.</p>
 	<h2>Pantai Widuri</h2>
