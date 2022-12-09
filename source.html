@@ -2,98 +2,9 @@
 <html>
 <title>WisataPemalangA11.2022.14639</title>
 <head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<style>
-* {
-  box-sizing: border-box;
-}
-
-.menu {
-  text-decoration: none;
-  float: left;
-  width: 20%;
-  text-align: center;
-}
-
-.menu a {
-  text-decoration: none;
-  background-color: #2337eb;
-  padding: 8px;
-  margin-top: 7px;
-  display: block;
-  width: 100%;
-  color: white;
-}
-
-.main {
-  text-decoration: none;
-  float: left;
-  width: 60%;
-  padding: 0 20px;
-  color : black;
-  
-}
-
-.right {
-  text-decoration: none;
-  background-color: #2337eb;
-  float: right;
-  width: 20%;
-  padding: 15px;
-  margin-top: 7px;
-  text-align: center;
-  }
-  
-  .left {
-  text-decoration: none;
-  background-color: #2337eb;
-  float: left;
-  width: 20%;
-  padding: 15px;
-  margin-top: 7px;
-  text-align: center;
-  color: #c5c9d1;
-  }
-
-ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-  background-color: #333;
-}
-
-li {
-  float: left;
-  border-right:1px solid #bbb;
-}
-
-li:last-child {
-  border-right: none;
-}
-
-li a {
-  display: block;
-  color: white;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-}
-
-li a:hover:not(.active) {
-  background-color: #111;
-}
-
-.active {
-  background-color: #0c00b3;
-}
-@media only screen and (max-width: 620px) {
-  /* For mobile phones: */
-  .menu, .main, .right {
-    width: 100%;
-  }
-}
-</style>
+<link rel="stylesheet" href="style.css">
 <link rel="icon" type="image/x-icon" href="nur.png">
 </head>
 <body style="background-color: #e5e5e5;font-family:Verdana;color:#ffffff;">
@@ -102,12 +13,65 @@ li a:hover:not(.active) {
 	<img src = "prof.png" width="13%" style="float:left;">
 	<img src = "pemalang.png" width="13%" style="float:right;">
 	<h2 style="text-align: center; 300px;">KABUPATEN PEMALANG KAYA AKAN WISATA ALAM</h2>
+	
+	<div id="clock"></div>
+		<script type="text/javascript">
+		<!--
+		function showTime() {
+		    var a_p = "";
+		    var today = new Date();
+		    var curr_hour = today.getHours();
+		    var curr_minute = today.getMinutes();
+		    var curr_second = today.getSeconds();
+		    if (curr_hour < 12) {
+		        a_p = "AM";
+		    } else {
+		        a_p = "PM";
+		    }
+		    if (curr_hour == 0) {
+		        curr_hour = 12;
+		    }
+		    if (curr_hour > 12) {
+		        curr_hour = curr_hour - 12;
+		    }
+		    curr_hour = checkTime(curr_hour);
+		    curr_minute = checkTime(curr_minute);
+		    curr_second = checkTime(curr_second);
+		 document.getElementById('clock').innerHTML=curr_hour + ":" + curr_minute + ":" + curr_second + " " + a_p;
+		    }
+
+		function checkTime(i) {
+		    if (i < 10) {
+		        i = "0" + i;
+		    }
+		    return i;
+		}
+		setInterval(showTime, 500);
+		//-->
+		</script>
+
+		<!-- Menampilkan Hari, Bulan dan Tahun -->
+		<br>
+		<script type='text/javascript'>
+			<!--
+			var months = ['Januari', 'Februari', 'Maret', 'April', 'Mei', 'Juni', 'Juli', 'Agustus', 'September', 'Oktober', 'November', 'Desember'];
+			var myDays = ['Minggu', 'Senin', 'Selasa', 'Rabu', 'Kamis', 'Jum&#39;at', 'Sabtu'];
+			var date = new Date();
+			var day = date.getDate();
+			var month = date.getMonth();
+			var thisDay = date.getDay(),
+			    thisDay = myDays[thisDay];
+			var yy = date.getYear();
+			var year = (yy < 1000) ? yy + 1900 : yy;
+			document.write(thisDay + ', ' + day + ' ' + months[month] + ' ' + year);
+			//-->
+		</script>
 		
 </div>
 <body>
 
 <ul>
-  <li><a href="index.html">Home</a></li>
+  <li><a href="daskom1.html">Home</a></li>
   <li><a class="active" href="source.html">Source</a></li>
   <li><a href="contact.html">Contact</a></li>
   <li style="float:right"><a href="#about">About</a></li>
@@ -119,6 +83,12 @@ li a:hover:not(.active) {
     <img src = "quotes.jpg" width="75%" style="float:center"; padding-center: 15px;>
     <b>TETAP PUTUS ASA</b>
 	<b>JANGAN SEMANGAT</b>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
 	
 	
 
@@ -126,7 +96,7 @@ li a:hover:not(.active) {
 
 
   <div class="main"><br>
-  <h2>SUMBER DAN REFERENSI</h2>
+  <h2 style= "text-align:center">SUMBER DAN REFERENSI</h2>
 		
 			   
 		
@@ -136,19 +106,34 @@ li a:hover:not(.active) {
     <h2>About</h2>
     <p>Pemalang (bahasa Jawa: ꦥꦼꦩꦭꦁ) adalah kabupaten di provinsi Jawa Tengah, Indonesia. Kabupaten Pemalang berada di jalur utama pantura 
 	   yang menghubungkan Jakarta–Semarang–Surabaya. Letaknya yang berada ditengah-tengah pulau jawa menjadikannya dijuluki sebagai "Pusere Jawa" atau pusarnya pulau jawa.</p>
-	    
+	<br>
+	<br>
+	<br>
   </div>
 </div>
 
 
 <div style="background-color:#e5e5e5;text-align:center;padding:10px;margin-top:7px;">
-	<a href="https://awal.id/2022/06/menguji-andrenalin-di-tebing-vertikal-taman-rancah-bukit-mendelem-pemalang/">https://awal.id/2022/06/menguji-andrenalin-di-tebing-vertikal-taman-rancah-bukit-mendelem-pemalang/</a>
-	<a href="https://travelspromo.com/htm-wisata/pantai-widuri-pemalang/">https://travelspromo.com/htm-wisata/pantai-widuri-pemalang/</a>
-	<a href="http://rainbowrafting.com/">http://rainbowrafting.com/</a>
-	<a href="https://wisatapemalang.com/arsip/wisata-pemalang-bukit-tangkeban/">https://wisatapemalang.com/arsip/wisata-pemalang-bukit-tangkeban/</a>
-	<a href="https://cafindonesia.com/listing/bukit-gambangan-camping-ground-pemalang-jateng/">https://cafindonesia.com/listing/bukit-gambangan-camping-ground-pemalang-jateng/</a>
-	<a href="https://www.infomoga.com/2020/02/5-fakta-pemandian-kali-suci-yang-segar.html">https://www.infomoga.com/2020/02/5-fakta-pemandian-kali-suci-yang-segar.html/</a>
-	<a href="https://twitter.com/kabarpml/status/686365066883502080">https://twitter.com/kabarpml/status/686365066883502080</a>
+	<script>
+$(document).ready(function(){
+  $("button").click(function(){
+    $("#div1").fadeToggle();
+  });
+});
+</script>
+</head>
+<body>
+<center>
+<button style="width:500px;height:20px;background-color:blue;color: white">KLIK UNTUK MELIHAT SUMBER</button><br><br>
+
+<div id="div1"<div style="width:750px;height;background-color:#465263;text-align:center;padding:10px;margin-top:7px;display:none;">
+	<a href="https://awal.id/2022/06/menguji-andrenalin-di-tebing-vertikal-taman-rancah-bukit-mendelem-pemalang/" style = "color: #ffffff">https://awal.id/2022/06/menguji-andrenalin-di-tebing-vertikal-taman-rancah-bukit-mendelem-pemalang/</a><br><br>
+	<a href="https://travelspromo.com/htm-wisata/pantai-widuri-pemalang/" style = "color: #ffffff">https://travelspromo.com/htm-wisata/pantai-widuri-pemalang/</a><br><br>
+	<a href="http://rainbowrafting.com/" style = "color: #ffffff">http://rainbowrafting.com/</a><br><br>
+	<a href="https://wisatapemalang.com/arsip/wisata-pemalang-bukit-tangkeban/" style = "color: #ffffff">https://wisatapemalang.com/arsip/wisata-pemalang-bukit-tangkeban/</a><br><br>
+	<a href="https://cafindonesia.com/listing/bukit-gambangan-camping-ground-pemalang-jateng/" style = "color: #ffffff">https://cafindonesia.com/listing/bukit-gambangan-camping-ground-pemalang-jateng/</a><br><br>
+	<a href="https://www.infomoga.com/2020/02/5-fakta-pemandian-kali-suci-yang-segar.html" style = "color: #ffffff">https://www.infomoga.com/2020/02/5-fakta-pemandian-kali-suci-yang-segar.html/</a><br><br>
+	<a href="https://twitter.com/kabarpml/status/686365066883502080" style = "color: #ffffff">https://twitter.com/kabarpml/status/686365066883502080</a><br><br>
 
 
 </div>
