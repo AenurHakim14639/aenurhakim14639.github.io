@@ -3,102 +3,7 @@
 <title>WisataPemalangA11.2022.14639</title>
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<style>
-* {
-  box-sizing: border-box;
-}
-
-.menu {
-  text-decoration: none;
-  float: left;
-  width: 20%;
-  text-align: center;
-}
-
-.menu a {
-  text-decoration: none;
-  background-color: #2337eb;
-  padding: 8px;
-  margin-top: 7px;
-  display: block;
-  width: 100%;
-  color: white;
-}
-
-.main {
-  text-decoration: none;
-  float: left;
-  width: 60%;
-  padding: 0 20px;
-  color : black;
-  
-}
-
-.right {
-  text-decoration: none;
-  background-color: #2337eb;
-  float: right;
-  width: 20%;
-  padding: 15px;
-  margin-top: 7px;
-  text-align: center;
-  }
-  
-  .left {
-  text-decoration: none;
-  background-color: #2337eb;
-  float: left;
-  width: 20%;
-  padding: 15px;
-  margin-top: 7px;
-  text-align: center;
-  color: #c5c9d1;
-  }
-
-ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-  background-color: #333;
-}
-
-li {
-  float: left;
-  border-right:1px solid #bbb;
-}
-
-li:last-child {
-  border-right: none;
-}
-
-li a {
-  display: block;
-  color: white;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-}
-
-li a:hover:not(.active) {
-  background-color: #111;
-}
-
-.active {
-  background-color: #0c00b3;
-}
-.tb-center {
- margin-left : auto;
- margin-right : auto;
- padding : 15px;
-}
-@media only screen and (max-width: 620px) {
-  /* For mobile phones: */
-  .menu, .main, .right {
-    width: 100%;
-  }
-}
-</style>
+<link rel="stylesheet" href="style.css">
 <link rel="icon" type="image/x-icon" href="nur.png">
 </head>
 <body style="background-color: #e5e5e5;font-family:Verdana;color:#ffffff;">
@@ -107,12 +12,64 @@ li a:hover:not(.active) {
 	<img src = "prof.png" width="13%" style="float:left;">
 	<img src = "pemalang.png" width="13%" style="float:right;">
 	<h2 style="text-align: center; 300px;">KABUPATEN PEMALANG KAYA AKAN WISATA ALAM</h2>
-		
+	
+	<div id="clock"></div>
+		<script type="text/javascript">
+		<!--
+		function showTime() {
+		    var a_p = "";
+		    var today = new Date();
+		    var curr_hour = today.getHours();
+		    var curr_minute = today.getMinutes();
+		    var curr_second = today.getSeconds();
+		    if (curr_hour < 12) {
+		        a_p = "AM";
+		    } else {
+		        a_p = "PM";
+		    }
+		    if (curr_hour == 0) {
+		        curr_hour = 12;
+		    }
+		    if (curr_hour > 12) {
+		        curr_hour = curr_hour - 12;
+		    }
+		    curr_hour = checkTime(curr_hour);
+		    curr_minute = checkTime(curr_minute);
+		    curr_second = checkTime(curr_second);
+		 document.getElementById('clock').innerHTML=curr_hour + ":" + curr_minute + ":" + curr_second + " " + a_p;
+		    }
+
+		function checkTime(i) {
+		    if (i < 10) {
+		        i = "0" + i;
+		    }
+		    return i;
+		}
+		setInterval(showTime, 500);
+		//-->
+		</script>
+
+		<!-- Menampilkan Hari, Bulan dan Tahun -->
+		<br>
+		<script type='text/javascript'>
+			<!--
+			var months = ['Januari', 'Februari', 'Maret', 'April', 'Mei', 'Juni', 'Juli', 'Agustus', 'September', 'Oktober', 'November', 'Desember'];
+			var myDays = ['Minggu', 'Senin', 'Selasa', 'Rabu', 'Kamis', 'Jum&#39;at', 'Sabtu'];
+			var date = new Date();
+			var day = date.getDate();
+			var month = date.getMonth();
+			var thisDay = date.getDay(),
+			    thisDay = myDays[thisDay];
+			var yy = date.getYear();
+			var year = (yy < 1000) ? yy + 1900 : yy;
+			document.write(thisDay + ', ' + day + ' ' + months[month] + ' ' + year);
+			//-->
+		</script>
 </div>
 <body>
 
 <ul>
-  <li><a href="index.html">Home</a></li>
+  <li><a href="daskom1.html">Home</a></li>
   <li><a href="source.html">Source</a></li>
   <li><a class="active" href="contact.html">Contact</a></li>
   <li style="float:right"><a href="#about">About</a></li>
