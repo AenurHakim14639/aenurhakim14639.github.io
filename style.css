@@ -144,7 +144,7 @@ li a:hover:not(.active) {
 .active {
   background-color: #0c00b3;
 }
-@media only screen and (max-width: 620px) {
+@media only screen and (max-width: 450px) {
   /* For mobile phones: */
   .menu, .main, .right, .left, .slideshow-container {
     width: 100%;
