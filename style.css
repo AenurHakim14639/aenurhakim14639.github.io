@@ -146,7 +146,7 @@ li a:hover:not(.active) {
 }
 @media only screen and (max-width: 620px) {
   /* For mobile phones: */
-  .menu, .main, .right {
+  .menu, .main, .right, .left, .slideshow-container {
     width: 100%;
   }
 }
